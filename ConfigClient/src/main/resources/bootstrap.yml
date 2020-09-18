@@ -19,4 +19,6 @@ management:
 #    name: dynamic-route-zuul                    #对应文件规则 的 应用名
 #  cloud:
 #    config:
-#      uri: http://localhost:7001/     
+#      uri: http://localhost:7001/
+
+#客户端配置：指定应用名、配置中心uri、环境名、分支名   

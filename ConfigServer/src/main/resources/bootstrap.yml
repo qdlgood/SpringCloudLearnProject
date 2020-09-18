@@ -11,3 +11,4 @@ spring:
           search-paths: config-repo     #匹配查询的路径名
           username: username            #账号和密码（真的假的随意）
           password: password
+#分布式配置中心：指定了git仓库uri、搜索路径、访问账号和密码
