@@ -1,0 +1,11 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: hello-service
+  profiles:
+    active: port1 #同集群注册中心，根据文件名运行不同文件
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/     

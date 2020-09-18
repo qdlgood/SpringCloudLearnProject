@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: zuul-gateway
+server:
+  port: 5001
+zuul:
+  AccessFilter:
+      pre:
+       disable: true                       #禁用名为AccessFilter的过滤器（这样就不用修改shouldFilter方法了）
+  sensitive-headers: Cookie,Set-Cookie,Authorization  #全局过滤，过滤掉HTTP请求头信息中的一些敏感信息
+#  prefix: /api                              #路由前缀，可加可不加
+  routes: 
+     feign-customer:                        #1.简单的路由配置，服务名
+        path: /test-url/**                  #映射的url
+     traditional-url:                       #2.传统的路由配置，此名称可以自定义
+        path: /tr-url/**                    #映射的url
+        url: http://localhost:9002/         #被映射的url（FeignCustomer服务）
+     orient-service-url:                    #3.面向服务的路由配置（推荐使用 ），此名称可以自定义
+        path: /os-url/**                    #映射的url
+        service-id: hello-service           #服务名
+#     ignored-services: hello-service,feign-customer #忽略这些服务路由的默认配置，可使用*忽略全部
+#     ignored-patterns: /**/hello/**             #使用该参数可以用来设置不希望被API网关进行路由的URL表达式
+
+#     server-provider:                        #4.面向服务的路由多实例配置，此名称可以自定义
+#        path: /multi-service/**              #映射的url
+#        service-id: hello-service            #服务名
+#hello-service:
+#   ribbon:
+#      listOfServers: http://localhost:8080/,http://localhost:8081/  
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
+    

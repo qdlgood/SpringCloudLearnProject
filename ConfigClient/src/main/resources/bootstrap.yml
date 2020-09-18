@@ -1,0 +1,22 @@
+#第一种：应用名+环境名
+spring:
+  application:
+    name: qdltest                    #指定了配置文件的应用名(对应文件规则 的 应用名)
+  cloud:
+    config:
+      uri: http://localhost:7001/    #Config server的uri(对应Config Server开放的地址)
+      profile: dev                   #指定的环境(对应文件规则 的 环境名)
+      label: master                  #指定的 分支 (对应文件规则 的 分支名)
+server:
+  port: 7002
+management:
+  security:
+    enabled: false          #SpringBoot 1.5.X 以上默认开通了安全认证，如果不关闭会要求权限    
+    
+#第二种:应用名
+#spring:
+#  application:
+#    name: dynamic-route-zuul                    #对应文件规则 的 应用名
+#  cloud:
+#    config:
+#      uri: http://localhost:7001/     

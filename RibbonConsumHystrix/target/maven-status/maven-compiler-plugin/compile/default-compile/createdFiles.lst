@@ -1,0 +1,10 @@
+com\trustkernel\test\hystrix\UserBatchCommand.class
+com\trustkernel\test\hystrix\CacheCommand.class
+com\trustkernel\test\service\RibbonHystrixService.class
+com\trustkernel\test\hystrix\UserCollapseCommand.class
+com\trustkernel\test\entity\User.class
+com\trustkernel\test\filter\HystrixRequestContextServletFilter.class
+com\trustkernel\test\controller\RibbonHystrixController.class
+com\trustkernel\test\HystrixApplication.class
+com\trustkernel\test\service\RibbonHystrixService$1.class
+com\trustkernel\test\hystrix\UserCommand.class

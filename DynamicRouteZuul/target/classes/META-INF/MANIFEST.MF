@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: DynamicRouteZuul
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: qdl
+Implementation-Vendor-Id: com.trustlernel.test
+Build-Jdk: 1.8.0_211
+Implementation-URL: https://projects.spring.io/spring-cloud/DynamicRou
+ teZuul
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

@@ -1,0 +1,7 @@
+com\trustkernel\test\controller\PostProviderController.class
+com\trustkernel\test\controller\PutAndDeleteProviderController.class
+com\trustkernel\test\controller\TestController.class
+com\trustkernel\test\entity\User.class
+com\trustkernel\test\controller\GetProviderController.class
+com\trustkernel\test\service\ProviderService.class
+com\trustkernel\test\EurekaServiceProviderApplication.class

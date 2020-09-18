@@ -1,0 +1,14 @@
+server:
+  port: 3001
+spring: 
+  application:
+    name: turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
+turbine:
+  app-config: ribbon-hystrix #指定需要收集监控信息的服务名，多个则使用逗号隔开
+  combine-host-port: true #同一主机多个服务使用hostname+port进行区分，此项默认为false，即同一主机多服务会合并成一个服务展示
+  cluster-name-expression: new String("default") #指定集群名称
+  

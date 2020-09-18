@@ -1,0 +1,11 @@
+server:
+  port: 4001
+spring:
+  application:
+    name: turbine-amqp
+management:
+  port: 4002    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/  

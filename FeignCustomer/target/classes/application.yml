@@ -1,0 +1,13 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: feign-customer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
+ribbon:
+       MaxAutoRetries: 1  # 每台服务器最多重试次数（默认值是0）
+       MaxAutoRetriesNextServer: 1 #最多重试多少台服务器（默认值是1） 实际请求次数：(MaxAutoRetries+1) * (MaxAutoRetriesNextServer+1)
+       ReadTimeout: 4000 # 每多少秒重试一次（默认值是5秒）

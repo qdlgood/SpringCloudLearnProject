@@ -1,0 +1,9 @@
+E:\testProject\RibbonConsumHystrix\src\main\java\com\trustkernel\test\HystrixApplication.java
+E:\testProject\RibbonConsumHystrix\src\main\java\com\trustkernel\test\entity\User.java
+E:\testProject\RibbonConsumHystrix\src\main\java\com\trustkernel\test\hystrix\UserCommand.java
+E:\testProject\RibbonConsumHystrix\src\main\java\com\trustkernel\test\filter\HystrixRequestContextServletFilter.java
+E:\testProject\RibbonConsumHystrix\src\main\java\com\trustkernel\test\hystrix\UserBatchCommand.java
+E:\testProject\RibbonConsumHystrix\src\main\java\com\trustkernel\test\hystrix\CacheCommand.java
+E:\testProject\RibbonConsumHystrix\src\main\java\com\trustkernel\test\hystrix\UserCollapseCommand.java
+E:\testProject\RibbonConsumHystrix\src\main\java\com\trustkernel\test\service\RibbonHystrixService.java
+E:\testProject\RibbonConsumHystrix\src\main\java\com\trustkernel\test\controller\RibbonHystrixController.java

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dynamic-route-zuul      #这个名字用做拉取配置文件的名称
+  cloud:
+    config:
+      uri: http://localhost:7001  #指定Spring Cloud Config开放的项目端口
+server:
+  port: 6001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
+
+#注意：这个yml文件 必须命名为bootstrap

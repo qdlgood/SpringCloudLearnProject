@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: hystrix-dashboard
+server:
+  port: 2001 
+
+  #访问http://localhost:2001/hystrix
+  #DashBoard不用注册到注册中心的，只需要在 被监控的服务 做一些配置即可
