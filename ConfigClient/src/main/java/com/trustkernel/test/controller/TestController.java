@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class TestController {
 	
-//	@Value("${zuul.routes.service-provider.path}")  //config-repo文件夹中的yml文件
+//	@Value("${zuul.routes.service-provider.path}")  //config-repo文件夹中的yml文件的属性
 	@Value("${from}")
 	private String fromValue;
 	
