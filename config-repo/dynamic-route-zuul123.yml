@@ -1,5 +1,5 @@
 zuul:
   routes:
     service-provider:
-      path: /service/**
-      serviceId: hello-service
+      path: /customer/**
+      serviceId: feign-customer
