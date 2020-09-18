@@ -7,6 +7,8 @@ spring:
       uri: http://localhost:7001/    #Config server的uri(对应Config Server开放的地址)
       profile: dev                   #指定的环境(对应文件规则 的 环境名)
       label: master                  #指定的 分支 (对应文件规则 的 分支名)
+      username: user                 #访问配置中心的用户名和密码
+      password: 123456
 server:
   port: 7002
 management:

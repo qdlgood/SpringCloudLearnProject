@@ -4,6 +4,8 @@ spring:
   cloud:
     config:
       uri: http://localhost:7001  #Config server的uri(对应Config Server开放的地址)
+      username: user              #访问配置中心的用户名和密码
+      password: 123456
 server:
   port: 6001
 eureka:
